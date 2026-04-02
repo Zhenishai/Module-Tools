@@ -2,6 +2,8 @@
 
 set -euo pipefail
 
+sort -k3 -n -r scores-table.txt | head -n 3
+
 # The input for this script is the scores-table.txt file.
 # TODO: Write a command to output scores-table.txt, with shows the lines for the three players with the highest first score, in descending order.
 # Your output should be:
