@@ -1,4 +1,4 @@
-const fs = require("fs");//fs is a toolbox from node
+const fs = require("fs");
 
 const args = process.argv.slice(2);
 
