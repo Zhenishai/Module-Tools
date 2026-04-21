@@ -1,7 +1,7 @@
 import argparse
 import cowsay
 
-animals = cowsay.list_cows()
+animals = cowsay.char_names
 
 parser = argparse.ArgumentParser(
     prog="cowsay",
@@ -25,4 +25,4 @@ args = parser.parse_args()
 
 text = " ".join(args.message)
 
-print(cowsay.cowsay(text, cow=args.animal))
+getattr(cowsay, args.animal)(text)
